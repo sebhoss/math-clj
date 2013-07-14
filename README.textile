@@ -1,6 +1,6 @@
-h1. finj "!https://travis-ci.org/sebhoss/math-clj.png!":https://travis-ci.org/sebhoss/math-clj "!https://www.ohloh.net/p/math-clj/widgets/project_thin_badge.gif!":https://www.ohloh.net/p/math-clj/
+h1. math-clj "!https://travis-ci.org/sebhoss/math-clj.png!":https://travis-ci.org/sebhoss/math-clj "!https://www.ohloh.net/p/math-clj/widgets/project_thin_badge.gif!":https://www.ohloh.net/p/math-clj/
 
-p. finj is a Clojure library for financial computations.
+p. Common math related functions, written in Clojure.
 
 
 h2. Usage
