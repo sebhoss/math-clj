@@ -1,40 +1,80 @@
 h1. math-clj "!https://travis-ci.org/sebhoss/math-clj.png!":https://travis-ci.org/sebhoss/math-clj "!https://www.ohloh.net/p/math-clj/widgets/project_thin_badge.gif!":https://www.ohloh.net/p/math-clj/
 
-p. Common math related functions, written in Clojure.
-
+p. Common math functions for Clojure-based projects.
 
 h2. Usage
 
-p. The library lives under @com.github.sebhoss@ and is divided into the following namespaces and functions: 
+p. The library offers a JDK-, JavaScript- and a pure Clojure-based implementations. Depending on your target platform chose the appropriate dependency and @:require@ both the @com.github.sebhoss.math-protocols@ and @com.github.sebhoss.math@ namespace.
 
+p. The following matrix shows which vars are available on which platform:
 
-h3. math/
-
-p. Various math functions (most from JDK/Math): @e@, @Pi@, @mean@, @abs@, @floor@, @ceil@, @round@, @sgn@, @signum@, @sgn-eq?@, @sgn-different?@, @ln@, @log10@, @exp@, @pow@, @sqrt@, @root@, @sin@, @cos@, @tan@, @asin@, @acos@, @atan@, @sinh@, @cosh@, @tanh@
-
-h3. predicate/
-
-* @(not-nil? x)@ - true if x is not nil, false otherwise
-* @(≈ x y epsilon)@ - true if x is within epsilon of y, false otherwise
-* @(≈0 x epsilon)@ - true if x is within epsilon of zero
-
+|_. Function |_. JDK |_. JavaScript |_. Clojure |
+| abs | ✓ | ✓ | ✓ |
+| acos | | ✓ | |
+| asin | | ✓ | |
+| atan | | ✓ | |
+| ceil | | | |
+| cos | | ✓ | |
+| cosh | | | |
+| e | | | |
+| exp | | ✓ | |
+| floor | | | |
+| ln | | | |
+| log10 | | | |
+| min | ✓ | ✓ | |
+| max | ✓ | ✓ | |
+| mean | | | |
+| pi | | | |
+| pow | | ✓ | |
+| root | | | |
+| round | | | |
+| signum | | | |
+| sin | | ✓ | |
+| sinh | | | |
+| sgn | | | |
+| sgn-eq? | | | |
+| sgn-different? | | | |
+| sqrt | | | |
+| tan | | ✓ | |
+| tanh | | | |
 
 h2. Integration
 
 h3. Maven
 
+p. Depending on your target platform pick on of the following dependencies:
+
 bc. <dependencies>
   <dependency>
     <groupId>com.github.sebhoss</groupId>
-    <artifactId>math-clj</artifactId>
-    <version>[1.0.0,2.0.0)</version>
+    <artifactId>math-jdk</artifactId>
+    <version>[2.0.0,3.0.0)</version>
+  </dependency>
+</dependencies>
+
+bc. <dependencies>
+  <dependency>
+    <groupId>com.github.sebhoss</groupId>
+    <artifactId>math-js</artifactId>
+    <version>[2.0.0,3.0.0)</version>
+  </dependency>
+</dependencies>
+
+bc. <dependencies>
+  <dependency>
+    <groupId>com.github.sebhoss</groupId>
+    <artifactId>math-clojure</artifactId>
+    <version>[2.0.0,3.0.0)</version>
   </dependency>
 </dependencies>
 
 h3. Leiningen
 
-bc. [com.github.sebhoss/math-clj "[1.0.0,2.0.0)"]
+bc. [com.github.sebhoss/math-jdk "[2.0.0,3.0.0)"]
 
+bc. [com.github.sebhoss/math-js "[2.0.0,3.0.0)"]
+
+bc. [com.github.sebhoss/math-clojure "[2.0.0,3.0.0)"]
 
 h2. License
 
