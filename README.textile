@@ -16,15 +16,15 @@ p. The following matrix shows which vars are available on which platform:
 | ceil | ✓ | | |
 | cos | ✓ | ✓ | |
 | cosh | ✓ | | |
-| e | ✓ | | |
+| e | ✓ | ✓ | |
 | exp | ✓ | ✓ | |
 | floor | ✓ | | |
 | ln | ✓ | | |
 | log10 | ✓ | | |
-| min | ✓ | ✓ | |
 | max | ✓ | ✓ | |
 | mean | | | ✓ |
-| pi | ✓ | | |
+| min | ✓ | ✓ | |
+| pi | ✓ | ✓ | |
 | pow | ✓ | ✓ | |
 | root | ✓ | | |
 | round | ✓ | | |
@@ -32,8 +32,8 @@ p. The following matrix shows which vars are available on which platform:
 | sin | ✓ | ✓ | |
 | sinh | ✓ | | |
 | sgn | ✓ | | |
-| sgn-eq? | ✓ | | |
 | sgn-different? | ✓ | | |
+| sgn-eq? | ✓ | | |
 | sqrt | ✓ | | |
 | tan | ✓ | ✓ | |
 | tanh | ✓ | | |
