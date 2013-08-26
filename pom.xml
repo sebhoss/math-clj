@@ -74,5 +74,6 @@
   	<module>math-protocols</module>
   	<module>math-jdk</module>
   	<module>math-js</module>
+  	<module>math-clojure</module>
   </modules>
 </project>
