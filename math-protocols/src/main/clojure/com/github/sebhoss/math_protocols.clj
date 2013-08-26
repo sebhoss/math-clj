@@ -10,7 +10,7 @@
   "Protocols for match functions")
 
 (defprotocol MEAN
-  (mean [x y] "(mean x y) is the mean of x and y"))
+  (mean [x & more] "(mean x & more) is the mean of x and more"))
 
 (defprotocol ABS
   (abs [x] "(abs x) is the absolute value of x"))
