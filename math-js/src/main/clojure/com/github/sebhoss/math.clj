@@ -13,6 +13,15 @@
     * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math"
   (:require [com.github.sebhoss.math-protocols :refer :all]))
 
+(def ^:const e
+  "e is the double value that is closer than any other to e, the base of the natural logarithms."
+  (js/Math.E))
+
+(def ^:const pi
+  "pi is the double value that is closer than any other to pi, the ratio of the circumference of a circle to its
+   diameter."
+  (js/Math.PI))
+
 (extend-type Number
   ABS
     (abs [x] (js/Math.abs x))
