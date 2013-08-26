@@ -10,11 +10,3 @@
   "Pure Clojure-based implementation of misc. math functions"
   (:require [com.github.sebhoss.math-protocols :refer :all]))
 
-(extend-protocol MEAN
-  Number
-    (mean [x & more]
-      (let [numbers (flatten (conj more x))
-            length (count numbers)]
-        (if (zero? length)
-          0
-          (/ (reduce + numbers) length)))))

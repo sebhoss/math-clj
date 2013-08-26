@@ -25,9 +25,6 @@
 (extend-type Number
   ABS
     (abs [x] (js/Math.abs x))
-  COMPARISON
-    (min [x y] (js/Math.min x y))
-    (max [x y] (js/Math.max x y))
   Rounding
     (floor [x] (js/Math.floor x))
     (ceil [x] (js/Math.ceil x))
