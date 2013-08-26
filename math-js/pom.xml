@@ -17,4 +17,12 @@
   </parent>
   <artifactId>math-js</artifactId>
   <packaging>clojure</packaging>
+
+  <dependencies>
+    <dependency>
+      <groupId>com.github.sebhoss</groupId>
+      <artifactId>math-protocols</artifactId>
+      <version>1.0.1-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
 </project>
