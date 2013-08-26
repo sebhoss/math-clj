@@ -7,12 +7,18 @@
 ;
 
 (ns com.github.sebhoss.math
-  "JavaScript-based implementation of misc. math functions"
+  "JavaScript-based implementation of misc. math functions
+
+   References:
+    * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math"
   (:require [com.github.sebhoss.math-protocols :refer :all]))
 
 (extend-type Number
   ABS
     (abs [x] (js/Math.abs x))
+  COMPARISON
+    (min [x y] (js/Math.min x y))
+    (max [x y] (js/Math.max x y))
   Rounding
     (floor [x] (js/Math.floor x))
     (ceil [x] (js/Math.ceil x))
