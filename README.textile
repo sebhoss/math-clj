@@ -21,8 +21,6 @@ p. The following matrix shows which vars are available on which platform:
 | floor | ✓ | | |
 | ln | ✓ | | |
 | log10 | ✓ | | |
-| max | ✓ | ✓ | |
-| min | ✓ | ✓ | |
 | pi | ✓ | ✓ | |
 | pow | ✓ | ✓ | |
 | root | ✓ | | |
