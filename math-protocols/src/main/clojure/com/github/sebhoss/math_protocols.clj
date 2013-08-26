@@ -15,6 +15,10 @@
 (defprotocol ABS
   (abs [x] "(abs x) is the absolute value of x"))
 
+(defprotocol COMPARISON
+  (min [x y] "(min x y) returns the smaller of x and y")
+  (max [x y] "(max x y) returns the greater of x and y"))
+
 (defprotocol Rounding
   (floor [x] "(floor x) is x rounded down")
   (ceil [x] "(ceil x) is x rounded up")
