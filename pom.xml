@@ -25,7 +25,7 @@
   <!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
   <artifactId>math-clj</artifactId>
   <version>1.0.1-SNAPSHOT</version>
-  <packaging>clojure</packaging>
+  <packaging>pom</packaging>
   <name>math-clj</name>
   <description>Common math functions for Clojure.</description>
   <url>https://github.com/sebhoss/math-clj</url>
@@ -70,4 +70,9 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <modules>
+  	<module>math-protocols</module>
+  	<module>math-jdk</module>
+  	<module>math-js</module>
+  </modules>
 </project>
