@@ -9,34 +9,34 @@ p. The library offers a JDK-, JavaScript- and a pure Clojure-based implementatio
 p. The following matrix shows which vars are available on which platform:
 
 |_. Function |_. JDK |_. JavaScript |_. Clojure |
-| abs | ✓ | ✓ | ✓ |
-| acos | | ✓ | |
-| asin | | ✓ | |
-| atan | | ✓ | |
-| ceil | | | |
-| cos | | ✓ | |
-| cosh | | | |
-| e | | | |
-| exp | | ✓ | |
-| floor | | | |
-| ln | | | |
-| log10 | | | |
+| abs | ✓ | ✓ | |
+| acos | ✓ | ✓ | |
+| asin | ✓ | ✓ | |
+| atan | ✓ | ✓ | |
+| ceil | ✓ | | |
+| cos | ✓ | ✓ | |
+| cosh | ✓ | | |
+| e | ✓ | | |
+| exp | ✓ | ✓ | |
+| floor | ✓ | | |
+| ln | ✓ | | |
+| log10 | ✓ | | |
 | min | ✓ | ✓ | |
 | max | ✓ | ✓ | |
-| mean | | | |
-| pi | | | |
-| pow | | ✓ | |
-| root | | | |
-| round | | | |
-| signum | | | |
-| sin | | ✓ | |
-| sinh | | | |
-| sgn | | | |
-| sgn-eq? | | | |
-| sgn-different? | | | |
-| sqrt | | | |
-| tan | | ✓ | |
-| tanh | | | |
+| mean | | | ✓ |
+| pi | ✓ | | |
+| pow | ✓ | ✓ | |
+| root | ✓ | | |
+| round | ✓ | | |
+| signum | ✓ | | |
+| sin | ✓ | ✓ | |
+| sinh | ✓ | | |
+| sgn | ✓ | | |
+| sgn-eq? | ✓ | | |
+| sgn-different? | ✓ | | |
+| sqrt | ✓ | | |
+| tan | ✓ | ✓ | |
+| tanh | ✓ | | |
 
 h2. Integration
 
